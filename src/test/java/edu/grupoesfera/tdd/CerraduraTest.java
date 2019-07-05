@@ -25,13 +25,13 @@ public class CerraduraTest {
 		cerradura.abrir(1234);
 		assertThat(cerradura.estaAbierta()).isTrue();
 	}
-	/*
+
 	@Test
 	public void alCrearLaCerraduraDeberiaEstarAbierta(){
 		Cerradura cerradura = new Cerradura(1234, 3);
 		assertThat(cerradura.estaAbierta()).isTrue();
 	}
-	
+	/*
 	@Test
 	public void alCerrarLaCerraduraNoDeberiaEstarAbierta(){
 		Cerradura cerradura = new Cerradura(1234, 3);

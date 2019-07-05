@@ -3,7 +3,7 @@ package edu.grupoesfera.tdd;
 public class Cerradura {
 
 	private int contraseña  ;
-	private boolean estaAbierta;
+	private boolean estaAbierta = true;
 	public Cerradura(int clave, int intentos) {
 		contraseña = clave;
 	}
