@@ -12,19 +12,20 @@ public class CerraduraTest {
 		assertThat(cerradura.abrir(1234)).isTrue();
 	}
 	
+
 	@Test
 	public void abrirConClaveIncorrectaNoDeberiaAbrirLaCerradura(){
 		Cerradura cerradura = new Cerradura(1234, 3);
 		assertThat(cerradura.abrir(123)).isFalse();
 	}
-	
+
 	@Test
 	public void alAbrirLaCerraduraDeberiaEstarAbierta(){
 		Cerradura cerradura = new Cerradura(1234, 3);
 		cerradura.abrir(1234);
 		assertThat(cerradura.estaAbierta()).isTrue();
 	}
-	
+	/*
 	@Test
 	public void alCrearLaCerraduraDeberiaEstarAbierta(){
 		Cerradura cerradura = new Cerradura(1234, 3);
@@ -86,5 +87,5 @@ public class CerraduraTest {
 		cerradura.abrir(1231);
 		assertThat(cerradura.cantidadIntentosFallidos()).isEqualTo(2);
 	}
-	
+	*/
 }
